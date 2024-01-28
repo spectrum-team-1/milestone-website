@@ -6,6 +6,7 @@
 	--section-color-2: #dedede;
 	--nav-hover: #b3b3b3;
 	scroll-behavior: smooth;
+	-webkit-backface-visibility: hidden;
 }
 
 body,
