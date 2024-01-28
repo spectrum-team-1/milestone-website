@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital@0;1&display=swap');
 
 :root {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Inclusive Sans', sans-serif;
+	font-weight: 400;
+	font-style: normal;
 	--section-color-1: #f7f7f7;
 	--section-color-2: #dedede;
 	--nav-hover: #b3b3b3;
@@ -22,9 +25,10 @@ h1 {
 }
 
 .nav-button {
-	padding: 0.5rem;
+	padding: 1rem;
 	border-radius: 10px;
 	transition: 100ms all ease-in-out;
+	font-size: x-large;
 }
 
 .nav-button:hover {
@@ -54,18 +58,19 @@ a.nav-button:visited {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-items: center;
 	background-color: var(--section-color-1);
 	box-shadow: 0 6px 14px -21px black;
 	padding-top: 1rem;
 	padding-bottom: 1rem;
-	gap: 1rem;
 	text-align: center;
+	gap: 1rem;
 }
 
 .heading {
-	padding: 1rem;
 	text-align: center;
+}
+
+.header-spacer {
 }
 
 .nav {
@@ -100,14 +105,29 @@ a.nav-button:visited {
 	.container {
 		max-width: 768px;
 	}
-
-	.header {
-		flex-direction: row;
-	}
 }
 @media (min-width: 1024px) {
 	.container {
 		max-width: 1024px;
+	}
+	.header {
+		flex-direction: row;
+		justify-content: space-between;
+		gap: 0;
+	}
+
+	.header-spacer {
+		width: 360px;
+	}
+
+	.nav {
+		width: 360px;
+	}
+
+	.heading {
+		/* margin-left: auto; */
+		/* margin-right: auto; */
+		width: 360px;
 	}
 }
 @media (min-width: 1280px) {
