@@ -2,9 +2,10 @@
 
 :root {
 	font-family: 'Roboto', sans-serif;
-	--body-color: #dedede;
-	--section-color: #f7f7f7;
+	--section-color-1: #f7f7f7;
+	--section-color-2: #dedede;
 	--nav-hover: #b3b3b3;
+	scroll-behavior: smooth;
 }
 
 body,
@@ -16,8 +17,7 @@ h1 {
 .body {
 	display: flex;
 	flex-direction: column;
-	gap: 4rem;
-	background-color: var(--body-color);
+	background-color: var(--section-color-1);
 }
 
 .nav-button {
@@ -41,12 +41,20 @@ a.nav-button:visited {
 	color: inherit;
 }
 
+.color-1 {
+	background-color: var(--section-color-1);
+}
+
+.color-2 {
+	background-color: var(--section-color-2);
+}
+
 .header {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-items: center;
-	background-color: var(--section-color);
+	background-color: var(--section-color-1);
 	box-shadow: 0 6px 14px -21px black;
 	padding-top: 1rem;
 	padding-bottom: 1rem;
@@ -57,7 +65,7 @@ a.nav-button:visited {
 .heading {
 	padding: 1rem;
 	text-align: center;
-	margin-left: 10px;
+	margin-left: 2em;
 }
 
 .nav {
@@ -72,14 +80,16 @@ a.nav-button:visited {
 	align-items: center;
 }
 
+.section {
+	width: 100%;
+}
+
 .container {
 	width: 100%;
-	min-height: 70dvh;
 	margin-right: auto;
 	margin-left: auto;
-	background-color: var(--section-color);
-	border-radius: 10px;
-	box-shadow: 6px 6px 14px -21px black;
+	padding: 2rem;
+	height: 1000px;
 }
 @media (min-width: 640px) {
 	.container {
