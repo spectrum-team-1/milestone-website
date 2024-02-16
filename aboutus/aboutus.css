@@ -1,0 +1,56 @@
+.title-text {
+	margin: 0;
+	font-size: 4rem;
+}
+
+.role {
+	font-size: x-large;
+}
+
+.role-cards {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 40px;
+}
+
+.role-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-left: 100px;
+	padding-right: 100px;
+}
+
+.headshot {
+	aspect-ratio: 1/1;
+	height: 250px;
+	width: 250px;
+	object-fit: cover;
+}
+
+.text-image-container {
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+@media (min-width: 640px) {
+}
+@media (min-width: 768px) {
+}
+@media (min-width: 1024px) {
+	.text-image-container {
+		flex-direction: row;
+		align-items: normal;
+		text-align: left;
+	}
+}
+@media (min-width: 1280px) {
+}
+@media (min-width: 1536px) {
+}

@@ -8,6 +8,7 @@
 	--section-color-1: #f7f7f7;
 	--section-color-2: #dedede;
 	--nav-hover: #b3b3b3;
+	--download-button: rgb(118, 97, 83);
 	scroll-behavior: smooth;
 	-webkit-backface-visibility: hidden;
 }
@@ -24,24 +25,33 @@ h1 {
 	background-color: var(--section-color-1);
 }
 
-.nav-button {
+.button {
 	padding: 1rem;
 	border-radius: 10px;
 	transition: 100ms all ease-in-out;
 	font-size: x-large;
+	height: fit-content;
+	width: fit-content;
+	min-width: 125px;
+	cursor: pointer;
+	border: none;
 }
 
-.nav-button:hover {
+.nav > .button {
+	justify-self: center;
+}
+
+.button:hover {
 	background-color: var(--nav-hover);
 	box-shadow: 0 5px 14px -7px rgba(0, 0, 0, 0.75);
 }
 
-a.nav-button:link {
+a.button:link {
 	text-decoration: inherit;
 	color: inherit;
 }
 
-a.nav-button:visited {
+a.button:visited {
 	text-decoration: inherit;
 	color: inherit;
 }
@@ -75,7 +85,7 @@ a.nav-button:visited {
 
 .nav {
 	display: flex;
-	gap: 4rem;
+	gap: 2rem;
 	justify-content: center;
 }
 
@@ -94,8 +104,8 @@ a.nav-button:visited {
 	margin-right: auto;
 	margin-left: auto;
 	padding: 2rem;
-	height: 1000px;
 }
+
 @media (min-width: 640px) {
 	.container {
 		max-width: 640px;
@@ -110,24 +120,18 @@ a.nav-button:visited {
 	.container {
 		max-width: 1024px;
 	}
-	.header {
-		flex-direction: row;
-		justify-content: space-between;
-		gap: 0;
-	}
-
 	.header-spacer {
-		width: 360px;
+		width: 610px;
 	}
 
 	.nav {
-		width: 360px;
+		padding-right: 1rem;
 	}
 
 	.heading {
 		/* margin-left: auto; */
 		/* margin-right: auto; */
-		width: 360px;
+		width: 610px;
 	}
 }
 @media (min-width: 1280px) {
@@ -138,5 +142,10 @@ a.nav-button:visited {
 @media (min-width: 1536px) {
 	.container {
 		max-width: 1536px;
+	}
+	.header {
+		flex-direction: row;
+		justify-content: space-between;
+		gap: 0;
 	}
 }

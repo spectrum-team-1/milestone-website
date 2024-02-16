@@ -26,6 +26,12 @@
 	font-size: 4rem;
 }
 
+h3.big-text {
+	margin: 0;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
 .landing-text {
 	height: 100%;
 	display: flex;
@@ -62,6 +68,63 @@
 	margin-top: auto;
 } */
 
+.project-overview-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: 4rem;
+}
+
+.forward {
+	z-index: 10000;
+	position: relative;
+}
+
+.project-overview-container > div {
+	width: 70dvw;
+}
+
+.project-overview-container > img {
+	width: 40dvw;
+	height: 30dvw;
+	transform: translateY(-125px);
+	display: none;
+}
+
+.overview-text {
+	font-size: x-large;
+}
+
+.milestone-container {
+	display: flex;
+	flex-direction: column;
+	gap: 5dvw;
+}
+
+.embed {
+	width: 75dvw;
+	aspect-ratio: 16/9;
+	background-color: var(--section-color-1);
+}
+
+.download-container {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.download-title {
+	font-size: larger;
+}
+
+.download.button {
+	background-color: var(--section-color-1);
+}
+
+.download.button:hover {
+	background-color: var(--nav-hover);
+}
+
 .landing-background {
 	height: 100%;
 	width: 100%;
@@ -93,6 +156,23 @@
 	.big-text {
 		font-size: 6rem;
 	}
+
+	.project-overview-container > div {
+		width: 40dvw;
+	}
+
+	.project-overview-container > img {
+		display: block;
+	}
+
+	.embed {
+		width: 50dvw;
+	}
+
+	.milestone-container {
+		flex-direction: row;
+		justify-content: center;
+	}
 }
 @media (min-width: 1280px) {
 	.landing-text {
@@ -110,5 +190,10 @@
 
 	.big-text {
 		font-size: 8rem;
+	}
+
+	.project-overview-container > img {
+		display: block;
+		transform: translateY(-200px);
 	}
 }
