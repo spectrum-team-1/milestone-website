@@ -104,7 +104,7 @@ h3.big-text {
 .embed {
 	width: 75dvw;
 	aspect-ratio: 16/9;
-	background-color: blue;
+	background-color: var(--section-color-1);
 }
 
 .download-container {
