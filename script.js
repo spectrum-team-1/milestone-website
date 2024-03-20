@@ -41,7 +41,7 @@ const milestoneHtml = {
     `,
 };
 
-MILESTONE_CONTAINER.insertAdjacentHTML('beforebegin', milestoneHtml.one);
+MILESTONE_CONTAINER.insertAdjacentHTML('beforebegin', milestoneHtml.two);
 
 function updateMilestone(button, value) {
 	removeOutput();
