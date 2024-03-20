@@ -2,7 +2,7 @@ const MILESTONE_CONTAINER = document.getElementById('milestone-output');
 
 const milestoneHtml = {
 	one: `
-    <div id="milestone-container" class="milestone-container">
+    <div id="milestone-container" class="milestone-container fade-in">
         <div>
             <iframe
                 class="embed"
@@ -10,7 +10,7 @@ const milestoneHtml = {
             </iframe>
         </div>
         <div class="download-container">
-            <span class="download-title">Download Links:</span>
+            <span class="download-title">Download Deliverables:</span>
             <a
                 href="https://drive.google.com/uc?export=download&id=19UKQFrvncfl0qvkw_7bPapGw_ztRVRr9"
                 target="_blank"
@@ -21,7 +21,7 @@ const milestoneHtml = {
     </div>
     `,
 	two: `
-        <div id="milestone-container"  class="milestone-container">
+        <div id="milestone-container"  class="milestone-container fade-in">
             <div>
                 <iframe
                     class="embed"
@@ -29,7 +29,7 @@ const milestoneHtml = {
                 </iframe>
             </div>
             <div class="download-container">
-                <span class="download-title">Download Links:</span>
+                <span class="download-title">Download Deliverables:</span>
                 <a
                     href="https://drive.google.com/uc?export=download&id=19UKQFrvncfl0qvkw_7bPapGw_ztRVRr9"
                     target="_blank"
@@ -38,6 +38,25 @@ const milestoneHtml = {
                 >
             </div>
         </div>
+    `,
+	three: `
+        <div id="milestone-container"  class="milestone-container fade-in">
+            <div>
+                <iframe
+                    class="embed"
+                    src="https://www.youtube.com/embed/rbINuRxOAAQ">
+                </iframe>
+            </div>
+            <div class="download-container">
+                <span class="download-title">Download Deliverables:</span>
+                <a
+                    href="https://drive.google.com/uc?export=download&id=19UKQFrvncfl0qvkw_7bPapGw_ztRVRr9"
+                    target="_blank"
+                    class="download button"
+                    >Milestone Three</a
+                >
+            </div>
+        </div> 
     `,
 };
 
@@ -53,6 +72,12 @@ function updateMilestone(button, value) {
 			break;
 		case 'two':
 			MILESTONE_CONTAINER.insertAdjacentHTML('beforebegin', milestoneHtml.two);
+			break;
+		case 'three':
+			MILESTONE_CONTAINER.insertAdjacentHTML(
+				'beforebegin',
+				milestoneHtml.three
+			);
 			break;
 	}
 
