@@ -25,7 +25,7 @@ const milestoneHtml = {
             <div>
                 <iframe
                     class="embed"
-                    src="https://www.youtube.com/embed/rbINuRxOAAQ">
+                    src="https://www.youtube.com/embed/oy8xyyArlug">
                 </iframe>
             </div>
             <div class="download-container">
