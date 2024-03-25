@@ -62,25 +62,23 @@
 			</section>
 
 			<section id="milestone" class="color-2 section">
-				<div class="container">
+				<div class="container milestone-section">
 					<h3 class="big-text">Milestone Progress:</h3>
-					<div class="milestone-container">
-						<div>
-							<iframe
-								class="embed"
-								src="https://www.youtube.com/embed/rbINuRxOAAQ">
-							</iframe>
-						</div>
-						<div class="download-container">
-							<span class="download-title">Download Links:</span>
-							<a
-								href="https://drive.google.com/uc?export=download&id=19UKQFrvncfl0qvkw_7bPapGw_ztRVRr9"
-								target="_blank"
-								class="download button"
-								>Milestone One</a
-							>
-						</div>
+					<div class="button-container">
+						<button
+							id="one"
+							class="milestone-button un"
+							onclick="updateMilestone(this, 'one')">
+							Milestone One
+						</button>
+						<button
+							id="two"
+							class="milestone-button un selected"
+							onclick="updateMilestone(this, 'two')">
+							Milestone Two
+						</button>
 					</div>
+					<div id="milestone-output" class="milestone-container"></div>
 				</div>
 			</section>
 		</main>
