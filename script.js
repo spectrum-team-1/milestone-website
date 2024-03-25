@@ -31,7 +31,7 @@ const milestoneHtml = {
             <div class="download-container">
                 <span class="download-title">Download Deliverables:</span>
                 <a
-                    href="https://drive.google.com/uc?export=download&id=19UKQFrvncfl0qvkw_7bPapGw_ztRVRr9"
+                    href="https://drive.google.com/uc?export=download&id=1maoO9Drf5IGfSfihfMowMW4G_3xljVQi"
                     target="_blank"
                     class="download button"
                     >Milestone Two</a
